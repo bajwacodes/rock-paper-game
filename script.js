@@ -60,6 +60,8 @@ function playGame(){
     for(i=0; i<5; i++){
         let humanChoice = getHumanInput();
         let computerChoice = getComputerInput();
+        console.log("Human chose: " + humanChoice);
+        console.log("Computer chose: " + computerChoice);
         playRound(humanChoice, computerChoice);
     }
 
@@ -73,6 +75,8 @@ function playGame(){
         console.log("It's a tie!");
     }
 }
+
+playGame();
 
 
 
